@@ -24,12 +24,20 @@ filemenu.add_command(label='Export to Googlesheet')
 #Help
 def About():
 	messagebox.showinfo('About','สวัสดีครับ โปรแกรมนี้คือโปรแกรมบันทึกข้อมูล\nสนใจบรีจาคไหม ขอ1BTCก็พอแล้ว')
+
+
+
 Helpmenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Help',menu=Helpmenu)
 Helpmenu.add_command(label='About',command=About)
+
 #donate
+def Donate():
+	messagebox.showinfo('Donate','ขอ1BTCก็พอแล้ว')
+	
 donatemenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Donate',menu=donatemenu)
+donatemenu.add_command(label='Donate',command=Donate)
 
 #######################################
 
